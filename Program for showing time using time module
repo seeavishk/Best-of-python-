@@ -1,0 +1,15 @@
+import time 
+t=time.strftime('%H:%M:%S')   #use to get the time as per the computers default time
+print(t)
+h=int(time.strftime('%H'))
+print(h)
+m=int(time.strftime('%M'))
+print(m)
+s=int(time.strftime('%S'))
+print(s)
+if(h<12):
+      print("good morning sir,have a nice day")
+elif(h>12 & h<18):
+      print("sir its afternood...good afternoon")
+else:
+      print("sir its night...good night")     
