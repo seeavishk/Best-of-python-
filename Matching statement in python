@@ -1,0 +1,12 @@
+#Matching--a new feature in the python onwards of 10
+#just like switch of the cpp or c language
+x=int(input("enter the value of x"))
+match x:
+    case 0:
+        print("x is zero")
+    case 4:
+        print("case is 4")
+    case 5:
+    # case _ if x!=90
+    #     print("numbber is not 90")      
+        print(x)  
