@@ -1,0 +1,29 @@
+#just simple like in maths for the set
+# s={2,4,6,5}
+# print(s)
+# #no guarntee of the order
+# #no duplicate value
+# aviral = set()
+# print(type(aviral))  #it gives the dic if not written the set()
+# for value in s:
+#     print(value)
+
+#union and intersection
+s={1,2,3,4,5}
+s1={2,6,8,7}
+print(s.union(s1))
+s.update(s1)  
+print(s,s1)
+s.intersection_update(s1)
+print(s)
+k1={'aviral','shukla','hey hey'}
+k2={'kaun','hello','bhkk'}
+# k1.intersection_update(k2)  #returend the null set
+# print(k1)
+print(k2.issuperset(k1))
+k1.add("yo yo jigare")
+print(k1)
+k1.remove("aviral")
+k2.discard("hello")
+print(k1)
+print(k2)
