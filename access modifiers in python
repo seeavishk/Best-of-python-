@@ -1,0 +1,11 @@
+#the modifiers i.e the public,private,protected
+class employee():
+    def __init__(self) :
+        self.__name="aviral"  #by applying the double underscore we can make it as private
+        
+a=employee()
+# print(a.__name) #eror ,,cant call the object directly from using this 
+print(a._employee__name)  #can be accessed indirectly...its called NAME MANGING
+
+print(a.__dir__())
+employee()
