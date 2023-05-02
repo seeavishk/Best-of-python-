@@ -1,0 +1,16 @@
+# #the basic form of the dictionary
+# dic={
+#     "aviral":"founder",
+#     "shukla":"surname",
+#     "aim": "get the name in list"
+# }
+# print(dic.get('aim'))  #will show null if the key is not present
+# info={ 'name':"aviral",'age':19,'eligible':True}
+# print(info.keys())
+# for key in info.keys():
+#     print(f"the value corresponding to the key {key} is {info[key]}")
+frnds={'list':"only","kaun":"hum","enemy":"mai"}
+
+print(frnds.keys())
+for key in frnds.keys():
+  print(f"My categorization of the given {key} category is {frnds[key]}")
