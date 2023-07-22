@@ -1,0 +1,21 @@
+class person:                   #constructor ke liye we use __init__ 
+  def __init__(self,n,o):   #yaha prr sirf 2 arguements hai self is passed automatically...that is if the total arguements are sent as 2 than the consideration of only one will be there
+    print("hey i am a person")
+    self.name=n
+    self.occ=o
+    # name="aviral"
+    # occ="software dev"
+
+    def info(self):
+        print(f"{self.name}is a {self.occ}")
+a=person("aviral","dev")
+b=person("sakshi","hr")   
+a=person("aviral","hey hey")      #person here is a constructor
+#c=person(1,2)
+# a.info()
+# b.info()
+# person()
+# print(c)
+# a.info()
+# a.name="divya"
+# a.occ="HR"
