@@ -1,0 +1,16 @@
+class employee:
+    def __init__(self,name,salary):
+        self.name=name
+        self.salary=salary
+        @classmethod
+        def fromStr(cls,string):
+            return cls(string.split("-")[0],string.split("-")[1])
+e=employee("aviral",1200)
+print(e.name)
+print(e.salary)
+string="aviral -1000"
+e=employee.fromstring(string) #split the string into two parts for the 0 index
+print(e.name)
+print(e.salary)        
+
+
