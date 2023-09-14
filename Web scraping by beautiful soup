@@ -1,0 +1,23 @@
+from bs4 import BeautifulSoup
+with open('index.html','r') as html_file:
+    content=html_file.read()
+    mask=BeautifulSoup(content,'lxml')
+    #print(mask.prettify())
+    #print(content)
+    soup=BeautifulSoup(content,'lxml')
+  #  print(soup.prettify())
+   # tags=soupa.find_all('h1')
+    # tags=soup.find_all(class_='homepage-container')
+    # print(tags)
+    course_html_tags=soup.findAll('h1')
+    for search in course_html_tags :
+        #print(search)
+        course_card=soup.findAll('div',class_='search-results')
+        for course in course_card:
+            print(course)
+            print("CHANGE")
+            print(course.a)
+            print("BETTER WAY")
+            print(f'The following is being provided in the index html{course} is course{course_card}')
+            
+        
